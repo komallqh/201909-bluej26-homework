@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小女孩序列帧动画</title>
+		<link rel="icon" type="text/css" href="img/icon.ico"/>
+	
+	</head>
+	<body>
+		<style type="text/css">
+			/*@keyframes girl{
+				16.66%{background-position: -180px 0;}
+				33.33%{background-position: -360px 0;}
+				50.00%{background-position: -540px 0;}
+				66.66%{background-position: -720px 0;}
+				83.33%{background-position: -900px 0;}
+				100%{background-position: -1800px 0;}
+			}
+			
+			.window{
+				width: 180px;
+				height: 300px;
+				border: 1px solid black;
+				background-image: url(img/girl.png);
+				animation: girl 1s infinite step-end;
+			}*/
+			/*steps(6,end); 控制动画在时间片段内产生跳跃;适用于动画间隔固定的时间轴
+			第一个参数表示将时间轴等分若干份,第二个参数表示动画产生跳跃是在时间片段的起始帧(start)或者结尾振(end)
+			
+			step-start:      控制动画在时间片段内产生跳跃起始帧位置 发生跳跃;
+			step-end:      控制动画在时间片段内产生结尾帧位置 发生跳跃  */
+			@keyframes girl{
+				
+				100%{background-position: -1080px 0;}
+			}
+			
+			.window{
+				width: 180px;
+				height: 300px;
+				border: 1px solid black;
+				background-image: url(img/girl.png);
+				animation: girl 1s infinite steps(6,end);
+			}
+			
+		</style>
+		
+		<div class="window">
+			
+		</div>
+	</body>
+</html>

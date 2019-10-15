@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*@font-face{
+font-family: MyFont;
+	src: url("./font/RAVIE.TTF");
+}
+dd a{
+	font-family: MyFont;
+}	*/
+				
+body{
+	font-size: 12px;
+}
+
+dl:first-of-type dt:first-of-type{
+	background-color: gray;
+}
+
+dl:last-of-type dt:first-of-type{
+	background-color: blue;
+}
+
+dd a{
+	color: red;
+	font-size: 18px;
+	}
+
+p{
+	background-color: gray;
+}
+p:nth-of-type(2){
+	font-size: 30px;
+}
+
+p a{
+	font-family: "楷体";
+}
+p a:link{
+	color: chartreuse;
+}
+
+p a:visited{
+	color: red;
+}
+p a:hover{
+	color: cornflowerblue;
+}
+p a:active{
+	color: aqua;
+}

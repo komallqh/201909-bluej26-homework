@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>(LOADING)文字有层次跳动</title>
+		<link rel="icon" type="text/css" href="img/icon.ico"/>
+	</head>
+	<body>
+		
+		<style type="text/css">  
+			.LOADING{
+				width: 400px;
+				height: 200px;
+				margin-top: 200px;
+				margin-left: 400px;
+				background-color: black;
+				text-align: center;
+			}
+			.LOADING p{
+				width: 200px;
+				margin: auto;
+			}
+		   .LOADING span{  
+		        float:left;  
+		        position: relative;  
+		        color: #88e5fb;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 200px;
+				letter-spacing: 16px;
+		    }  
+		
+		    .LOADING span:nth-child(1){  
+		        -webkit-animation:LOADING 1s linear 0s infinite alternate;  
+		    }  
+		
+		    .LOADING span:nth-child(2){  
+		        -webkit-animation:LOADING 1s linear 0.2s infinite alternate;  
+		    }  
+		
+		    .LOADING span:nth-child(3){  
+		        -webkit-animation:LOADING 1s linear 0.4s infinite alternate;  
+		    }  
+		
+		    .LOADING span:nth-child(4){  
+		        -webkit-animation:LOADING 1s linear 0.6s infinite alternate;  
+		    }  
+		
+		    .LOADING span:nth-child(5){  
+		        -webkit-animation:LOADING 1s linear 0.8s infinite alternate;  
+		    }  
+		    
+		    .LOADING span:nth-child(6){  
+		        -webkit-animation:LOADING 1s linear 1.0s infinite alternate;  
+		    }  
+		    
+		    .LOADING span:nth-child(7){  
+		        -webkit-animation:LOADING 1s linear 1.2s infinite alternate;  
+		    }  
+		
+		
+		    @-webkit-keyframes LOADING  
+		    {  
+		        0%{  
+		            top:0px;  
+		            color:#88e5fb;  
+		        }  
+		        50%{  
+		            top:-10px;  
+		            color:blue;  
+		        }  
+		        100%{  
+		            top:10px;  
+		            color:#88e5fb;  
+		        }  
+		    }  
+		
+		</style>  
+		
+		<div class="LOADING">
+			<p>
+			    <span>L</span>  
+			    <span>O</span>  
+			    <span>A</span>  
+			    <span>D</span>  
+			    <span>I</span>  
+			    <span>N</span>  
+			    <span>G</span>
+			</p>    
+		</div>
+	</body>
+</html>

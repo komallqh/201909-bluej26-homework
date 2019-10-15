@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转牌坊</title>
+		<link rel="icon" type="text/css" href="img/icon.ico"/>
+	</head>
+	<body>
+		
+		<style type="text/css">
+			.signBox{
+				width: 300px;
+				height: 300px;
+				margin: auto;
+				padding-top:200px ;
+				perspective: 350px;	
+			}
+			.sign{
+				width: 300px;
+				height: 100px;
+				background: pink;				
+				transition: all 1s;
+				
+			}
+			.sign:hover{
+				transform: rotateY(360deg);	
+				background: aqua;
+				/*transform: scaleY(2);*/
+			}
+			.sign{
+				text-align: center;
+				line-height: 100px;
+			}
+		</style>
+		<div class="signBox">	
+			<div class="sign">
+				<span>云破日出，你是那道光束！</span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+@charset "utf-8";
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-image: url(../img/bg_body.gif);
+	background-repeat: inherit;
+	/*background-color: transparent;*/
+}
+*{
+	box-sizing: border-box;
+}
+#motto{
+	width: 350px;
+	height: 178px;
+	font-family: "华文行楷";
+	font-size: 20px;
+	color: gray;
+	margin-bottom: 20px;
+	padding: 35px 0 0;
+	position: relative;
+	left: 18%;
+	overflow: hidden;
+	float: left;
+	width: 50%;
+}
+.rtimg{
+	/*float: right;*/
+	float: left;
+	width: 50%;
+}
+#lzheader{
+	height: 100px;
+	align-content: center;
+	/*background-color: #00BFFF;
+	background-image: url(../img/a.jpg);
+	background-repeat: no-repeat;
+	background-size: initial;*/
+	padding: 28.5px 0px;
+	overflow: hidden;	
+}
+.lzbody{
+	width: 100%;
+	background-image: url(../img/line.gif);
+}
+h1{
+	color: #666666;
+	margin: auto;
+}
+li h4{
+	margin: 10px 0px;
+	/*border: 1px solid black;*/
+	background-color: #eac68a;
+	border-top-right-radius: 8px;
+}
+ol{
+	width: 70%;
+	font: 20px "agency fb";
+	/*display: inline-block;*/
+	color: #888888;
+	margin: 15px 0;
+	float: left;
+}
+.newHw,.newCourse,.newnNotes,.newProject{
+	font: 22px "book antiqua";
+	color: #888888;
+	font-weight: bold;
+}
+ol li{
+	margin: 0 120px;
+}
+.camaro img{
+	width: 30%; 
+	float: right;
+	position: absolute;
+	left: 72%;
+	top: 80%;
+	opacity:0.7;
+}
+a{
+	color: #0f91bc;
+	font-size: 22px;
+	font-family: "华文行楷";
+	text-decoration: none;
+}
+.misic a:visited{
+	 color: #FF0000;
+	 font-weight: bold;
+}
+.misic a:hover{
+	color: #FF69B5;
+	
+}
+.misic a:active{
+	color: #0f91bc;
+	text-decoration: underline;
+}
+/*li>a:link{
+	color: #0f91bc;
+}*/
+a:visited{
+	color: gray;
+}
+a:hover{
+	color: #FF69B5;
+	
+}
+a:active{
+	color: #0f91bc;
+	text-decoration: underline;
+}
+
+table{
+	width: 70%;
+	font-family: "book antiqua";
+	align-content: center;
+	background-image: url(../img/bg_title.gif);
+	border-color: chocolate;
+}
+th{
+	width: 25%;
+	font-size: 22px;
+}
+.lfimg{
+	/*background-image: url(../img/bg_left.gif);*/
+	/*background-repeat: repeat no-repeat;*/
+}
+.note{
+	/*position: relative;*/
+	/*padding:0 35%;*/
+	/*overflow: hidden;*/
+	/*left: 35%;*/
+	width: 60%;
+	margin: auto;
+	/*1.设置超出部分隐藏*/
+	overflow: hidden;
+	/*2.设置隐藏样式为省略号*/
+	text-overflow: ellipsis;
+	/*3.限制显示行数*/
+	-webkit-line-clamp: 3;
+	/*4.将元素设置为伸缩盒子*/
+	display:-webkit-box;
+	/*5.设置伸缩盒子排序自上往下*/
+	-webkit-box-orient: vertical;
+}
+.footerTop{
+/*	width: 50px;*/
+	position: fixed;
+	left: 90%;
+	top:90%;	
+}

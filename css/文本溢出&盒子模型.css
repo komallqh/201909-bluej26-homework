@@ -1,0 +1,106 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family:myfont;
+	src: url("./font/RAVIE.TTF");
+}
+body{
+	font-family: myfont;
+	align-content: center;
+}
+div{
+	margin: 0 auto;
+}
+pre{
+	width: 350px;
+	font-size: 15px;
+	font-family: myfont;
+	font-weight: bold;
+	background-color: greenyellow;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+}
+.of{
+	width: 350px;
+	background-color: green;
+}
+
+.of1{
+	width: 350px;
+	background-color: hotpink;
+	overflow: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.of2{
+	width: 350px;
+	overflow: hidden;
+	background-color: darkorchid;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.recruitment{
+	width: 327px;
+	height: 284px;
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+	padding: 10px 11px 7px;
+	
+}
+.onebox{
+	width: 145px;
+	height: 125px;
+	box-sizing: border-box;
+	border: 8px solid #dadfe7;
+	margin-bottom: 17px;
+	float: left;
+}
+.twobox{
+	width: 145px;
+	height: 125px;
+	box-sizing: border-box;
+	border: 8px solid #dadfe7;
+	margin-bottom: 17px;
+	float: right;
+}
+.threebox{
+	width: 145px;
+	height: 125px;
+	box-sizing: border-box;
+	border: 8px solid #dadfe7;
+	float: left;
+}
+.fourbox{
+	width: 145px;
+	height: 125px;
+	box-sizing: border-box;
+	border: 8px solid #dadfe7;
+	float: right;
+}
+h3{
+	font: 14px "宋体" ;font-weight: bold;
+	color: #424242;
+	margin-left: 9px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+.recruitment p{
+	font: 11px "宋体" ;
+	color: #666666;
+	width: 75px;
+	letter-spacing: 0px;
+	float: left;
+	margin-left: 9px;
+}
+.recruitment img{
+	float: right;
+	width: 45px;
+	padding-top: 22px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>文本溢出&盒子模型</title>
+		<link rel="icon" href="./img/icon.ico" />
+		<!--<link rel="stylesheet" type="text/css" href="css/文本溢出&盒子模型.css"/>-->
+	</head>
+	<body>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.clear::after{
+				content: "";
+				display: block;
+				max-height: 0;
+				overflow: hidden;
+				visibility: hidden;
+				clear: both;
+			}
+			@font-face {
+				font-family:myfont;
+				src: url("./font/RAVIE.TTF");
+			}
+			body{
+				font-family: myfont;
+				align-content: center;
+			}
+			div{
+				margin: 0 auto;
+			}
+			pre{
+				width: 350px;
+				font-size: 15px;
+				font-family: myfont;
+				font-weight: bold;
+				background-color: greenyellow;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 4;
+			}
+			.of{
+				width: 350px;
+				background-color: green;
+			}
+			
+			.of1{
+				width: 350px;
+				background-color: hotpink;
+				overflow: auto;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.of2{
+				width: 350px;
+				overflow: hidden;
+				background-color: darkorchid;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 3;
+			}
+		</style>
+		
+		<div class="of">
+			<pre>文本溢出自动加 ...
+	overflow 属性规定当内容溢出元素框时发生的事情,
+	text-overflow 属性规定当文本溢出包含元素时发生的事情。
+	white-space 属性设置如何处理元素内的空白。
+			</pre><br />
+			<p class="of1">单行文本:
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			</p><br />
+			<p class="of2">多行文本:
+				display: -webkit-box;
+				-webkit-box-orient: vertical;			
+				-webkit-line-clamp: 3;			
+				overflow: hidden;
+			</p>
+		</div>
+		<br /><hr />
+		
+		
+		<style type="text/css">
+			.recruitment{
+				width: 327px;
+				height: 284px;
+				background-color: #f1f1f1;
+				box-sizing: border-box;
+				padding: 10px 11px 7px;
+				
+			}
+			.onebox{
+				width: 145px;
+				height: 125px;
+				box-sizing: border-box;
+				border: 8px solid #dadfe7;
+				margin-bottom: 17px;
+				float: left;
+			}
+			.twobox{
+				width: 145px;
+				height: 125px;
+				box-sizing: border-box;
+				border: 8px solid #dadfe7;
+				margin-bottom: 17px;
+				float: right;
+			}
+			.threebox{
+				width: 145px;
+				height: 125px;
+				box-sizing: border-box;
+				border: 8px solid #dadfe7;
+				float: left;
+			}
+			.fourbox{
+				width: 145px;
+				height: 125px;
+				box-sizing: border-box;
+				border: 8px solid #dadfe7;
+				float: right;
+			}
+			h3{
+				font: 14px "宋体" ;font-weight: bold;
+				color: #424242;
+				margin-left: 9px;
+				margin-top: 11px;
+				margin-bottom: 11px;
+			}
+			.recruitment p{
+				font: 11px "宋体" ;
+				color: #666666;
+				width: 75px;
+				letter-spacing: 0px;
+				float: left;
+				margin-left: 9px;
+			}
+			.recruitment img{
+				float: right;
+				width: 45px;
+				padding-top: 22px;
+			}
+		</style>
+		<div class="recruitment">
+			<div class="onebox">
+				<h3>采购</h3>
+				<p>
+					有创意的想法和充满欲望的开创未来联合聘用人才。
+				</p>
+				<img src="img/绿植.png"/>
+			</div>
+			<div class="twobox">
+				<h3>招聘信息</h3>
+				<p>基于多年的社区能力的经验，充分发挥聘请人才。
+				</p>
+				<img src="img/色子.png"/>
+			</div>
+			<div class="threebox">
+				<h3>文员</h3>
+				<p>所有营的工作人员总是在一起，可以是一个招聘称职的员工。
+				</p>
+				<img src="img/计算器.png"/>
+			</div>
+			<div class="fourbox">
+				<h3>呼叫中心坐席</h3>
+				<p>客户需要伸出援助之手，每当你使用一个代理来。
+				</p>
+				<img src="img/杯子.png"/>
+			</div>
+		</div>		
+	</body>
+</html>

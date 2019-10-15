@@ -1,0 +1,33 @@
+table{
+	width: 695px;
+	height: 325.92px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+td{
+	width: 77.22px;	
+}
+
+.gray{
+	background: #343434;
+	color: white;
+}
+.thurs{
+	background: #88cc25;
+}
+.ts{
+	color: #6f6f6f;
+}
+.sx{
+	color: #25995c;
+}
+.bor{
+	border-color: #343434;
+}
+.gray p{
+	color: #00cdc9;
+}
+.course{
+	border-right-color:#343434 ;
+}

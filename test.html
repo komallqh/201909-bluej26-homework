@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<body>
+		<style type="text/css">
+			nav{
+				margin-left: 350px;
+			}
+			input{
+				display: none;	
+			}
+			input + label div{
+				transition: all 0.3s;
+				display: inline-block;
+			}
+			input:checked + label .shu{
+				transform: rotateZ(90deg);
+			}
+			span{
+				transition: all 0.3s;
+				display: inline-block;
+			}
+			input:checked + label + span{
+				transform: rotateZ(90deg);
+			}
+			.heng{
+				width: 13px;
+				height: 2px;
+				line-height: 2px;
+				font-size: 0;
+				background-color: black;
+				border: 0;
+			}
+			.shu{
+				width: 2px;
+				height: 11px;
+				line-height: 2px;
+				font-size: 0;
+				background-color: black;
+				border: 0;
+				position: relative;
+				left: -12px;
+				top: 4px;
+			}
+
+		</style>
+		<nav>
+			<ul>			
+				<li>
+					<input type="radio" name="test" id="radio04" value="" />
+					<label for="radio04">
+						<div class="heng"></div>
+						<div class="shu"></div>点我
+					</label>
+					<span>&gt;</span>
+				</li>
+				<li>
+					<input type="radio" name="test" id="radio05" value="" />
+					<label for="radio05">
+						<div class="heng"></div>
+						<div class="shu"></div>点我
+					</label>
+					<span>&gt;</span>
+				</li>
+			</ul>
+			
+		</nav>
+		
+		
+		
+		
+	</body>
+</html>

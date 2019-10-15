@@ -1,0 +1,28 @@
+body{
+
+	background-image: url(../img/bg.jpg);
+}
+table{
+	width: 599px;
+	text-align: center;
+	}
+
+table td{
+	width: 85px;
+}
+div{
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+#ml p{
+	color: #0b2059;
+}
+
+#ms{
+	margin-top: -80px;
+}
+
+#ms h4{
+	color: deepskyblue;
+}

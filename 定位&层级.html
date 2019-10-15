@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定位&层级</title>
+		<link rel="icon" href="./img/icon.ico" />
+	</head>
+	<body>
+		<style type="text/css">
+			/*默认定位*/
+			.static{
+				width: 0;
+				height: 0;
+				position: static;
+				left: 0px;
+				top: 0px;
+				background-color: #888888;
+			}
+			/*相对定位*/
+			.relative{
+				width: 150px;
+				height: 150px;
+				position: relative;
+				left: 100px;
+				top: 20px;
+				background-color: #00BFFF;
+			}
+			/*绝对定位*/
+			.absoluteF{
+				position: absolute;
+			}
+			.absolute{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 50px;
+				top: -80px;
+				background-color: black;
+			}
+			/*固定定位*/
+			/*.fixed{
+				width: 100%;
+				height: 50px;
+				position: fixed;
+				top: 50%;
+				background-color: #00FFFF;
+			}*/
+			
+			/*层级*/
+			.z-index{
+				position: relative;
+			}
+			.z-index01{
+				width: 300px;
+				height: 130px;
+				position: absolute;
+				left: 190px;
+				top: -100px;
+				background-color: red;
+				z-index: 2;
+			}
+			.z-index02{
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				left: 120px;
+				top: -55px;
+				background-color: greenyellow;
+				z-index: 1;
+			}
+			.z-index03{
+				width: 100px;
+				height: 50px;
+				position: absolute;
+				left: 390px;
+				top: -20px;
+				background-color: yellow;
+				z-index: 3;
+			}
+		</style>
+		<div class="box">
+			<!--默认定位-->
+			<div class="static"></div>
+			<!--相对定位-->
+			<div class="relative"></div>
+			<!--绝对定位-->
+			<div class="absoluteF">
+				<div class="absolute"></div>
+			</div>
+			<!--固定定位-->
+			<div class="fixed"></div>
+			<!--层级-->
+			<div class="z-index">
+				<div class="z-index01"></div>
+				<div class="z-index02"></div>
+				<div class="z-index03"></div>
+			</div>
+		</div>
+	</body>
+</html>

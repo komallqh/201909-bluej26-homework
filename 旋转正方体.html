@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>transform-style</title>
+		<link rel="icon" type="text/css" href="img/icon.ico"/>
+	</head>
+	<body>
+		<style type="text/css">
+			
+			/*transform-style 设置元素出于3d空间还是平面
+				默认值flat: 指定元素的子元素位于平面
+				preserve-3d: 指定元素的子元素位于3d空间内
+				*/
+			body{
+				padding-top: 200px;
+				padding-left: 500px;
+			}
+			
+			.box{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				text-align: center;
+				/*perspective: 300px;*/
+				transition: all 5s;
+				transform-style: preserve-3d;
+				
+				
+			}
+			/*.box div{
+				backface-visibility: 设置元素背面是否可见
+				backface-visibility: hidden;
+			}*/
+			.front{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(0,0,0,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(100px);
+			}
+			.back{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(10,115,105,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(0px) rotateY(180deg);
+			}
+			.left{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(70,20,180,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(50px) translateX(-50px) rotateY(-90deg);
+			}
+			.right{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(125,10,80,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(50px) translateX(50px) rotateY(90deg);
+			}
+			.top{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(250,110,10,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(50px) translateY(-50px) rotateX(90deg);
+			}
+			.bottom{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				background-color: rgba(119,250,18,.2);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateZ(50px) translateY(50px) rotateX(-90deg);
+			}
+			.box:hover{
+				transform: rotateY(360deg) rotateX(360deg);								
+			}
+		</style>
+		
+		<div class="box">
+			<div class="front">前</div>
+			<div class="back">后</div>
+			<div class="left">左</div>
+			<div class="right">右</div>
+			<div class="top">上</div>
+			<div class="bottom">下</div>
+		</div>
+	</body>
+</html>

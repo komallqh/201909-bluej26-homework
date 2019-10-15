@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .column{
+            display: none;
+        }
+        input[type='checkbox']{
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ ul{
+            display: block;
+        }
+        p{
+        	width: 200px;
+        	height: 50px;
+        	background-color: #00BFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check"/>
+        <label for="check">标题栏</label>
+        <ul class="column">
+            <li>栏目1</li>
+            <li>栏目2</li>
+            <li>栏目3</li>
+            <li>栏目4</li>
+            <li>栏目5</li>
+        </ul>
+        
+        <p>今天你还好吗？</p>
+    </div>
+</body>
+</html>

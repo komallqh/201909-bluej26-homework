@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转风车</title>
+		<link rel="icon" type="text/css" href="img/icon.ico"/>
+	</head>
+	<body>
+		<style type="text/css">
+			body{
+				padding-top: 100px;
+				padding-left: 600px;
+			}
+			div{
+				transform-origin:0% 100%;
+			}
+			.winnowerBox{
+				width: 300px;
+				height: 300px;
+				/*background: pink;*/
+				position: relative;
+				text-align: center;
+				/*perspective: 300px;*/
+				transition: all 5s;
+				transform-style: preserve-3d;
+				transform-origin:0% 50%;
+				
+			}
+			.winnower01{
+				width: 0;
+				height: 0;
+				border-left: 80px solid green;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(60deg);
+				box-shadow: 0 0 12px deepskyblue;
+			
+			}
+			.winnower02{
+				width: 0;
+				height: 0;
+				border-left: 80px solid orange;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(120deg);
+				box-shadow: 0 0 12px hotpink;
+			
+			}
+			.winnower03{
+				width: 0;
+				height: 0;
+				border-left: 80px solid yellow;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(180deg);
+				box-shadow: 0 0 12px deepskyblue;
+			
+			}
+			.winnower04{
+				width: 0;
+				height: 0;
+				border-left: 80px solid lawngreen;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(240deg);
+				box-shadow: 0 0 12px hotpink;
+				
+			}
+			.winnower05{
+				width: 0;
+				height: 0;
+				border-left: 80px solid lightskyblue;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(300deg);
+				box-shadow: 0 0 12px deepskyblue;
+				
+			}
+			.winnower06{
+				width: 0;
+				height: 0;
+				border-left: 80px solid mediumpurple;
+				border-bottom: 150px solid transparent;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateZ(360deg);
+				box-shadow: 0 0 12px hotpink;
+			
+			}
+			.winnowerBox:hover{
+				transform: rotateZ(3600deg);
+			}			
+		</style>
+		
+		
+		<div class="winnowerBox">
+			<div class="winnower01">青</div>
+			<div class="winnower02">橙</div>
+			<div class="winnower03">黄</div>
+			<div class="winnower04">绿</div>
+			<div class="winnower05">蓝</div>
+			<div class="winnower06">紫</div>
+		</div>
+	</body>
+</html>
